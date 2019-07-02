@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightGreen">
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentTop="true"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="94dp"
+      android:text="@string/you_are_currently_not_logged"
+      android:textSize="20sp" />
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentTop="true"
+      android:layout_centerHorizontal="true"
+      android:layout_marginStart="22dp"
+      android:layout_marginEnd="22dp"
+      android:layout_marginTop="135dp"
+      android:text="@string/log_in_or_make_an_account_in_accounts_tab_to_be_able_to_manage_collections_and_beatmaps"
+      android:textSize="15sp" />
+
+</RelativeLayout>

@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/beatmap_image"
+            android:layout_width="160dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/beatmap_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/beatmap_image"
+            android:layout_alignStart="@+id/beatmap_image"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:maxLines="2"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/beatmap_artist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/beatmap_title"
+            android:layout_alignStart="@+id/beatmap_image"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="2dp"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/beatmap_mapperT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/beatmap_image"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/beatmap_image"
+            android:text="@string/mapped_by"
+            android:textSize="14sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/beatmap_mapper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/beatmap_mapperT"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/beatmap_mapperT"
+            android:textSize="14sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/beatmap_submittedT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/beatmap_mapperT"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/beatmap_image"
+            android:text="@string/submitted_on"
+            android:textSize="14sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/beatmap_submitted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/beatmap_submittedT"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/beatmap_submittedT"
+            android:textSize="14sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/beatmap_statusT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/beatmap_submittedT"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/beatmap_image"
+            android:textSize="14sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/beatmap_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/beatmap_statusT"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/beatmap_statusT"
+            android:textSize="14sp"
+            android:textStyle="italic" />
+
+        <ImageView
+            android:id="@+id/beatmap_bpmT"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/beatmap_title"
+            android:layout_alignStart="@+id/beatmap_title"
+            android:layout_marginTop="24dp" />
+
+        <TextView
+            android:id="@+id/beatmap_bpm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/beatmap_bpmT"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/beatmap_bpmT"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/beatmap_lengthT"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/beatmap_title"
+            android:layout_alignStart="@+id/beatmap_mapperT"
+            android:layout_marginTop="24dp" />
+
+        <TextView
+            android:id="@+id/beatmap_length"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/beatmap_lengthT"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/beatmap_lengthT"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/beatmap_csT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/beatmap_lengthT"
+            android:layout_alignStart="@+id/beatmap_bpmT"
+            android:layout_marginTop="10dp"
+            android:text="@string/circle_size"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/beatmap_cs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/beatmap_csT"
+            android:layout_alignEnd="@+id/beatmap_image"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="30dp"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/beatmap_hpT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/beatmap_csT"
+            android:layout_alignStart="@+id/beatmap_bpmT"
+            android:layout_marginTop="10dp"
+            android:text="@string/hp_drain"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/beatmap_hp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/beatmap_hpT"
+            android:layout_alignEnd="@+id/beatmap_image"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="30dp"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/beatmap_odT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/beatmap_hpT"
+            android:layout_alignStart="@+id/beatmap_bpmT"
+            android:layout_marginTop="10dp"
+            android:text="@string/accuracy"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/beatmap_od"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/beatmap_odT"
+            android:layout_alignEnd="@+id/beatmap_image"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="30dp"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/beatmap_arT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/beatmap_lengthT"
+            android:layout_alignStart="@+id/beatmap_lengthT"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/approach_rate"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/beatmap_ar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/beatmap_arT"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@id/beatmap_arT"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/beatmap_srT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/beatmap_arT"
+            android:layout_alignStart="@+id/beatmap_lengthT"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/star_difficulty"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/beatmap_sr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/beatmap_srT"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/beatmap_srT"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/beatmap_successT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/beatmap_odT"
+            android:layout_alignStart="@+id/beatmap_image"
+            android:layout_marginTop="10dp"
+            android:text="@string/success_rate"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/beatmap_success"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/beatmap_successT"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="30dp"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/beatmap_sourceT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/beatmap_successT"
+            android:layout_alignStart="@+id/beatmap_image"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/beatmap_source"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/beatmap_sourceT"
+            android:layout_alignStart="@+id/beatmap_image"
+            android:layout_marginTop="8dp"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/beatmap_tagsT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/beatmap_source"
+            android:layout_alignStart="@+id/beatmap_image"
+            android:layout_marginTop="30dp"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/beatmap_tags"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/beatmap_tagsT"
+            android:layout_alignStart="@+id/beatmap_image"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:maxLines="5"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/beatmap_button_remove"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_alignTop="@+id/beatmap_sourceT"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:text="@string/remove"
+            android:textSize="13sp" />
+    </RelativeLayout>
+</ScrollView>

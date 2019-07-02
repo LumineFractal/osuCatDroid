@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/search_queryT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/search"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/search_query"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/search_queryT"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_toEndOf="@+id/search_queryT"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/search_statusT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search_queryT"
+        android:layout_alignStart="@+id/search_queryT"
+        android:layout_marginTop="40dp"
+        android:text="@string/status"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/search_rankedT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search_statusT"
+        android:layout_alignStart="@+id/search_statusT"
+        android:layout_marginTop="20dp"
+        android:text="@string/ranked"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/search_qualifiedT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/search_rankedT"
+        android:layout_alignStart="@+id/search_rankedT"
+        android:text="@string/qualified"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/search_lovedT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/search_rankedT"
+        android:layout_toEndOf="@+id/search_ranked_check"
+        android:layout_marginStart="60dp"
+        android:text="@string/loved"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/search_unrankedT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/search_qualifiedT"
+        android:layout_toEndOf="@+id/search_qualified_check"
+        android:layout_marginStart="60dp"
+        android:text="@string/unranked"
+        android:textSize="20sp" />
+
+    <CheckBox
+        android:id="@+id/search_ranked_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/search_rankedT"
+        android:layout_alignTop="@id/search_rankedT"
+        android:layout_alignStart="@+id/search_qualified_check" />
+
+    <CheckBox
+        android:id="@+id/search_qualified_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/search_qualifiedT"
+        android:layout_alignTop="@id/search_qualifiedT"
+        android:layout_marginStart="12dp"/>
+
+    <CheckBox
+        android:id="@+id/search_loved_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/search_lovedT"
+        android:layout_alignTop="@id/search_lovedT"
+        android:layout_alignStart="@+id/search_unranked_check"/>
+
+    <CheckBox
+        android:id="@+id/search_unranked_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/search_unrankedT"
+        android:layout_alignTop="@id/search_unrankedT"
+        android:layout_marginStart="12dp"/>
+
+
+    <Button
+        android:id="@+id/search_button"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search_qualifiedT"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="@string/confirm" />
+
+</RelativeLayout>

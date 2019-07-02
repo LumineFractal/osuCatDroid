@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/profile_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile_image"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_alignStart="@+id/profile_image"
+            android:layout_alignEnd="@+id/profile_image"/>
+
+        <TextView
+            android:id="@+id/profile_performanceT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/performance"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            android:textSize="18sp"
+            android:layout_alignTop="@id/profile_image"
+            android:layout_toEndOf="@+id/profile_image"/>
+
+        <TextView
+            android:id="@+id/profile_performance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/profile_performanceT"
+            android:textSize="18sp"
+            android:layout_marginStart="2dp"
+            android:layout_toEndOf="@+id/profile_performanceT"/>
+
+        <TextView
+            android:id="@+id/profile_rankT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rank"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:textSize="18sp"
+            android:layout_below="@id/profile_performanceT"
+            android:layout_toEndOf="@+id/profile_image"/>
+
+        <TextView
+            android:id="@+id/profile_rank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/profile_rankT"
+            android:textSize="18sp"
+            android:layout_marginStart="3dp"
+            android:layout_toEndOf="@+id/profile_rankT"/>
+
+        <TextView
+            android:id="@+id/profile_playtimeT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/play_time"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:textSize="18sp"
+            android:layout_below="@id/profile_rankT"
+            android:layout_toEndOf="@+id/profile_image"/>
+
+        <TextView
+            android:id="@+id/profile_playtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/profile_playtimeT"
+            android:textSize="18sp"
+            android:layout_marginStart="3dp"
+            android:layout_toEndOf="@+id/profile_playtimeT"/>
+
+        <TextView
+            android:id="@+id/profile_playcountT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/playcount"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:textSize="18sp"
+            android:layout_below="@id/profile_playtimeT"
+            android:layout_toEndOf="@+id/profile_image"/>
+
+        <TextView
+            android:id="@+id/profile_playcount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/profile_playcountT"
+            android:textSize="18sp"
+            android:layout_marginStart="3dp"
+            android:layout_toEndOf="@+id/profile_playcountT"/>
+
+        <TextView
+            android:id="@+id/profile_countryT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/country"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:textSize="18sp"
+            android:layout_below="@id/profile_playcountT"
+            android:layout_toEndOf="@+id/profile_image"/>
+
+        <TextView
+            android:id="@+id/profile_country"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/profile_countryT"
+            android:textSize="18sp"
+            android:layout_marginStart="3dp"
+            android:layout_toEndOf="@+id/profile_countryT"/>
+
+        <TextView
+            android:id="@+id/profile_ranked_scoreT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ranked_score"
+            android:textStyle="bold"
+            android:layout_alignStart="@id/profile_image"
+            android:layout_marginTop="16dp"
+            android:textSize="18sp"
+            android:layout_below="@id/profile_username" />
+
+        <TextView
+            android:id="@+id/profile_ranked_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/profile_ranked_scoreT"
+            android:textSize="18sp"
+            android:layout_marginStart="4dp"
+            android:layout_toEndOf="@+id/profile_ranked_scoreT"/>
+
+        <TextView
+            android:id="@+id/profile_total_scoreT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/total_score"
+            android:textStyle="bold"
+            android:layout_alignStart="@id/profile_image"
+            android:layout_marginTop="6dp"
+            android:textSize="18sp"
+            android:layout_below="@id/profile_ranked_scoreT" />
+
+        <TextView
+            android:id="@+id/profile_total_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/profile_total_scoreT"
+            android:textSize="18sp"
+            android:layout_marginStart="4dp"
+            android:layout_toEndOf="@+id/profile_total_scoreT"/>
+
+        <TextView
+            android:id="@+id/profile_hit_accuracyT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hit_accuracy"
+            android:textStyle="bold"
+            android:layout_alignStart="@id/profile_image"
+            android:layout_marginTop="6dp"
+            android:textSize="18sp"
+            android:layout_below="@id/profile_total_scoreT" />
+
+        <TextView
+            android:id="@+id/profile_hit_accuracy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/profile_hit_accuracyT"
+            android:textSize="18sp"
+            android:layout_marginStart="4dp"
+            android:layout_toEndOf="@+id/profile_hit_accuracyT"/>
+
+        <TextView
+            android:id="@+id/profile_levelT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/current_level"
+            android:textStyle="bold"
+            android:layout_alignStart="@id/profile_image"
+            android:layout_marginTop="6dp"
+            android:textSize="18sp"
+            android:layout_below="@id/profile_hit_accuracyT" />
+
+        <TextView
+            android:id="@+id/profile_level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/profile_levelT"
+            android:textSize="18sp"
+            android:layout_marginStart="4dp"
+            android:layout_toEndOf="@+id/profile_levelT"/>
+
+        <TextView
+            android:id="@+id/profile_total_hitsT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/total_hits"
+            android:textStyle="bold"
+            android:layout_alignStart="@id/profile_image"
+            android:layout_marginTop="6dp"
+            android:textSize="18sp"
+            android:layout_below="@id/profile_levelT" />
+
+        <TextView
+            android:id="@+id/profile_total_hits"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/profile_total_hitsT"
+            android:textSize="18sp"
+            android:layout_marginStart="4dp"
+            android:layout_toEndOf="@+id/profile_total_hitsT"/>
+
+        <TextView
+            android:id="@+id/profile_hits_per_playT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hits_per_play"
+            android:textStyle="bold"
+            android:layout_alignStart="@id/profile_image"
+            android:layout_marginTop="6dp"
+            android:textSize="18sp"
+            android:layout_below="@id/profile_total_hitsT" />
+
+        <TextView
+            android:id="@+id/profile_hits_per_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/profile_hits_per_playT"
+            android:textSize="18sp"
+            android:layout_marginStart="4dp"
+            android:layout_toEndOf="@+id/profile_hits_per_playT"/>
+
+        <TextView
+            android:id="@+id/profile_join_dateT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/join_date"
+            android:textStyle="bold"
+            android:layout_alignStart="@id/profile_image"
+            android:layout_marginTop="6dp"
+            android:textSize="18sp"
+            android:layout_below="@id/profile_hits_per_playT" />
+
+        <TextView
+            android:id="@+id/profile_join_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/profile_join_dateT"
+            android:textSize="18sp"
+            android:layout_marginStart="4dp"
+            android:layout_toEndOf="@+id/profile_join_dateT"/>
+
+        <ImageView
+            android:id="@+id/profile_SS"
+            android:layout_width="90dp"
+            android:layout_height="45dp"
+            android:layout_alignStart="@id/profile_image"
+            android:layout_marginTop="12dp"
+            android:layout_below="@id/profile_join_dateT"/>
+
+        <ImageView
+            android:id="@+id/profile_S"
+            android:layout_width="90dp"
+            android:layout_height="45dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:layout_below="@id/profile_join_dateT"/>
+
+        <ImageView
+            android:id="@+id/profile_A"
+            android:layout_width="90dp"
+            android:layout_height="45dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="12dp"
+            android:layout_below="@id/profile_join_dateT"/>
+
+        <TextView
+            android:id="@+id/profile_SS_count"
+            android:layout_below="@+id/profile_SS"
+            android:layout_marginTop="12dp"
+            android:layout_alignStart="@+id/profile_SS"
+            android:layout_alignEnd="@+id/profile_SS"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/profile_S_count"
+            android:layout_below="@+id/profile_S"
+            android:layout_marginTop="12dp"
+            android:layout_alignStart="@+id/profile_S"
+            android:layout_alignEnd="@+id/profile_S"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/profile_A_count"
+            android:layout_below="@+id/profile_A"
+            android:layout_alignStart="@+id/profile_A"
+            android:layout_alignEnd="@+id/profile_A"
+            android:layout_marginTop="12dp"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+</ScrollView>

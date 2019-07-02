@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/beatmap_item_image"
+            android:layout_width="90dp"
+            android:layout_height="75dp" />
+
+        <TextView
+            android:id="@+id/beatmap_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:maxLines="1"
+            android:layout_alignEnd="@id/beatmap_item_image"
+            android:layout_toEndOf="@+id/beatmap_item_image"
+            android:layout_marginStart="16dp"
+            android:layout_alignParentEnd="true"
+            android:ellipsize="end"/>
+
+        <TextView
+            android:id="@+id/beatmap_item_artist_mapper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:maxLines="1"
+            android:layout_below="@+id/beatmap_item_name"
+            android:layout_alignStart="@+id/beatmap_item_name"/>
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
